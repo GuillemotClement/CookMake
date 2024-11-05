@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+.headerLogo{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.headerLogoPic{
+    font-size: 3.5rem;
+}
+.headerLogoTitle{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.headerMenuAction, .headerNav{
+    display: flex;
+    column-gap: 1rem;
+}
+
