@@ -1,0 +1,9 @@
+services:
+  frontend:
+    container_name: frontend-react
+    build: ./frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
