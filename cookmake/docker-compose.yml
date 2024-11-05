@@ -7,3 +7,25 @@ services:
       - /app/node_modules
     ports:
       - "5173:5173"
+
+  backend:
+    container_name: backend-express
+    build: ./backend
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    ports:
+      - "8080:8080"
+    command: npm run dev
+
+  database:
+    container_name: database_postgres
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: cookmake
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./backend/pgdata:/var/lib/postgresql/data

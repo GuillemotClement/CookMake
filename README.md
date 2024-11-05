@@ -11,3 +11,12 @@ Cette application permet de stocker ces recettes de cuisine, de planigier les me
 * PostgreSQL
 * Docker
 
+## Lancer le projet
+
+Une fois le dépot cloner, lancer le docker compose.
+
+```bash
+docker compose up
+```
+
+Dans le navigateur, accéder à `localhost:5173`
