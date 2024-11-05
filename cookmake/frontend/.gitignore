@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ignorer les données PostgreSQL
+/var/lib/postgresql/data/
+*.log
+*.pid
+*.auto.conf
